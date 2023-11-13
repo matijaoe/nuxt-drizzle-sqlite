@@ -5,7 +5,7 @@ const userInsertSchema = z.object({
   email: z.string().email(),
   age: z.number().int().min(1),
   sex: z.enum(['male', 'female', 'other']),
-}).isOptional()
+})
 
 const userUpdateSchema = z.object({
   name: z.string().optional(),
