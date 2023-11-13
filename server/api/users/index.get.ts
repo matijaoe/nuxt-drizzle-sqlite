@@ -10,7 +10,7 @@ export default defineEventHandler(async (event) => {
     const users = await db
       .select({
         name: $users.name,
-        upperName: sql`upper(${$users.name})`,
+        sex: sql<string>`upper(${$users.sex})`,
         age: $users.age,
       })
       .from($users)
