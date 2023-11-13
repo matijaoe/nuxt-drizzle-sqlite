@@ -12,3 +12,5 @@ export const $users = sqliteTable('users', {
 
 export type UserSelect = typeof $users.$inferSelect
 export type UserInsert = typeof $users.$inferInsert
+
+export type UserField = keyof UserSelect

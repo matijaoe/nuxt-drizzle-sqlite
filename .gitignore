@@ -10,3 +10,4 @@ dist
 .netlify
 **/.DS_Store
 sqlite.db
+server/db/migrations/meta/_journal.json
