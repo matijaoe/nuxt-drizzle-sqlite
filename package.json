@@ -1,0 +1,45 @@
+{
+  "name": "nuxt-starter",
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@8.5.0",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0"
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "studio": "drizzle-kit studio",
+    "db:generate": "drizzle-kit generate:sqlite",
+    "db:push": "drizzle-kit push:sqlite"
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.1.1",
+    "drizzle-orm": "^0.29.0"
+  },
+  "devDependencies": {
+    "@matijaoe/eslint-config": "^1.1.0",
+    "@nuxt/devtools": "^1.0.2",
+    "@nuxt/image": "^1.0.0",
+    "@nuxtjs/color-mode": "^3.3.0",
+    "@pinia/nuxt": "^0.5.1",
+    "@types/better-sqlite3": "^7.6.7",
+    "@unocss/eslint-config": "^0.57.3",
+    "@unocss/nuxt": "0.57.3",
+    "@vueuse/nuxt": "10.6.0",
+    "drizzle-kit": "^0.20.2",
+    "eslint": "^8.53.0",
+    "nuxt": "^3.8.1",
+    "nuxt-icon": "0.6.5",
+    "pinia": "^2.1.6",
+    "postcss-nesting": "^12.0.1",
+    "vue": "^3.3.8",
+    "vue-router": "^4.2.5"
+  }
+}
