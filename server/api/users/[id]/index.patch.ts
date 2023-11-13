@@ -1,8 +1,8 @@
 import { eq } from 'drizzle-orm'
 import { z } from 'zod'
+import { userUpdateSchema } from '~/schemas/user-schema'
 import type { UserField, UserInsert } from '~/server/db/schema'
 import { $users } from '~/server/db/schema'
-import { userUpdateSchema } from '~/server/schemas/user-schema'
 
 export default defineEventHandler(async (event) => {
   try {
